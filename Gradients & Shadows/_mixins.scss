@@ -1,0 +1,20 @@
+@mixin div-gradient-styles {
+    width: 500px;
+    height: 200px;
+    background-color: blue;
+}
+
+@mixin div-custom-template {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: center;
+}
+
+@mixin heading-typography {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}

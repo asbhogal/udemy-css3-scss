@@ -1,0 +1,62 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-title {
+    font-size: 200%;
+}
+
+/*---------CSS SELECTORS---------*/
+
+h1 {                    /*TARGETS TAG*/
+    color: red;
+}
+
+.first-paragraph {      /*TARGETS CLASS*/
+    color: green;
+}
+
+#first-link {           /*TARGETS ID*/
+    font-size: 200%;
+}
+
+/*---------CSS3 ADVANCED SELECTORS---------*/
+
+div p {                 /* DESCENDENT SELECTOR - SELECTS ALL P TAG CONTENT WITHIN THE DIV*/
+    font-weight: 700;
+}
+
+h3 ~ p {                /* SIBLING SELECTOR - SELECTS ALL P TAGS WITH AN H3 TAG IN ITS DIV*/
+    color: aquamarine;
+}
+
+h3 + p {                /* SIBLING SELECTOR - SELECTS ALL P TAGS WHICH SUCCEED AN H3 ELEMENT IN ITS DIV*/
+    text-transform: uppercase;
+}
+
+a[target] {             /*SELECTS ALL A LINKS WITH A TARGET ATTRIBUTE TO THEM*/
+    display: flex;
+    justify-content: center;
+}
+
+a[href="https://google.com/"] {
+    text-decoration: line-through;
+}
+
+/*---------CSS3 PSEUDO CLASSES---------*/
+
+input:focus {
+    color: red;     /*FONT COLOR*/
+    background: #000;
+    transition: 1s all ease-in-out;
+}
+
+input:enabled {
+    background: yellow;
+}
+
+input:disabled {
+    background: blueviolet;
+}
+
+input:checked{} /*USEFUL FOR RADIO/CHECKBOXES WHEN CHECKED*/

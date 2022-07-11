@@ -1,0 +1,64 @@
+@use 'mixins';
+@use 'variables';
+
+body {
+    @include div-custom-template;
+    @include heading-typography;
+    background: red;
+}
+
+#gradient-1 {
+    @include div-gradient-styles;
+    border-radius: 5px;
+    background: linear-gradient(white, blue); /* GRADIENT COLOR IS IN ORDER FROM TOP --> BOTTOM */
+}
+
+#gradient-2 {
+    @include div-gradient-styles;
+    background: linear-gradient(to right, white, blue);
+}
+
+#gradient-3 {
+    @include div-gradient-styles;
+    background: linear-gradient(to bottom right, white, blue);
+}
+
+#gradient-4 {
+    @include div-gradient-styles;
+    background: linear-gradient(to bottom left, white, red, green, blue);
+}
+
+#gradient-5 {
+    @include div-gradient-styles;
+    background: radial-gradient(white,blue); /*ie. FROM ONE TO THE OTHER)*/
+}
+
+#gradient-6 {
+    @include div-gradient-styles;
+    background: linear-gradient(to top right, yellow, green);
+    /*background: linear-gradient(to bottom left, green, yellow); WILL ALSO ACHIEVE THE SAME*/
+}
+
+div {
+    margin: $div-margin;
+}
+
+h1, h2, h3 {
+    @include heading-typography;
+}
+
+#invisible-text {
+    text-shadow: 2px 2px 4px green;
+    color: #fff;
+}
+
+#glowing-text {
+    text-shadow: 0 0 5px red;
+}
+
+#shadow-box {
+    width: 200px;
+    height: 200px;
+    box-shadow: 12px 12px 6px grey;
+    background-color:rgb(103, 73, 27);
+}

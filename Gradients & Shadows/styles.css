@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: center;
+}
+
+div {
+  margin: 10px;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+#invisible-text {
+  text-shadow: 2px 2px 4px green;
+  color: #fff;
+}
+
+#glowing-text {
+  text-shadow: 0 0 5px red;
+}
+
+#gradient-1 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: linear-gradient(white, blue); /* GRADIENT COLOR IS IN ORDER FROM TOP --> BOTTOM */
+}
+
+#gradient-2 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: linear-gradient(to right, white, blue);
+}
+
+#gradient-3 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: linear-gradient(to bottom right, white, blue);
+}
+
+#gradient-4 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: linear-gradient(to bottom left, white, red, green, blue);
+}
+
+#gradient-5 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: radial-gradient(white, blue); /*ie. FROM ONE TO THE OTHER)*/
+}
+
+#gradient-6 {
+  width: 500px;
+  height: 200px;
+  background-color: blue;
+  background: linear-gradient(to top right, yellow, green);
+  /*background: linear-gradient(to bottom left, green, yellow); WILL ALSO ACHIEVE THE SAME*/
+}
+
+#shadow-box {
+  width: 200px;
+  height: 200px;
+  box-shadow: 12px 12px 6px grey;
+  background-color: blanchedalmond;
+}/*# sourceMappingURL=styles.css.map */
