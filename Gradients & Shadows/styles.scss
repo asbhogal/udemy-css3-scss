@@ -4,7 +4,7 @@
 body {
     @include div-custom-template;
     @include heading-typography;
-    background: red;
+    color: red;
 }
 
 #gradient-1 {
